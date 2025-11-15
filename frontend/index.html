@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Blood Bank - Dashboard</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <nav class="navbar">
+    <div class="nav-brand">🩸 Blood Bank Management</div>
+    <ul class="nav-links">
+      <li><a href="index.html" class="active">Dashboard</a></li>
+      <li><a href="inventory.html">Inventory</a></li>
+      <li><a href="donors.html">Donors</a></li>
+      <li><a href="requests.html">Requests</a></li>
+    </ul>
+  </nav>
+
+  <div class="container">
+    <h1>Blood Inventory Dashboard</h1>
+
+    <div class="stats-grid" id="bloodTypeStats">
+      <!-- Blood type cards will be inserted here -->
+    </div>
+
+    <div class="card">
+      <h2>Recent Activity</h2>
+      <table id="recentActivityTable">
+        <thead>
+          <tr>
+            <th>Unit ID</th>
+            <th>Donor Name</th>
+            <th>Blood Type</th>
+            <th>Collection Date</th>
+            <th>Expiry Date</th>
+            <th>Status</th>
+          </tr>
+        </thead>
+        <tbody id="recentActivityBody">
+          <!-- Recent activity will be inserted here -->
+        </tbody>
+      </table>
+    </div>
+  </div>
+
+  <script src="dashboard.js"></script>
+</body>
+</html>
